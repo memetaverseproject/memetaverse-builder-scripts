@@ -1,6 +1,6 @@
 {
   "name": "@beland/builder-scripts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A collection of helpers to make it easier to build a Beland Builder script.",
   "main": "index.js",
   "scripts": {
