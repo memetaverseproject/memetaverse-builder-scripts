@@ -1,0 +1,30 @@
+{
+  "name": "@beland/builder-scripts",
+  "version": "1.0.1",
+  "description": "A collection of helpers to make it easier to build a Beland Builder script.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "make": "npm run build && rm -rf dist && cp -r src dist && cp -r lib dist/lib && cp package.json dist/package.json && cp LICENSE dist/LICENSE && cp README.md dist/README.md",
+    "makeclean": "rm -rf dist && npm run make",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belandproject/beland-builder-scripts.git"
+  },
+  "keywords": [],
+  "author": "Beland",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/belandproject/beland-builder-scripts/issues"
+  },
+  "homepage": "https://github.com/belandproject/beland-builder-scripts#readme",
+  "dependencies": {
+    "beland-ecs": "^0.0.6-dev"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.2",
+    "semantic-release": "^15.13.18"
+  }
+}
