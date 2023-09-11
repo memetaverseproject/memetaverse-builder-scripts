@@ -1,3 +1,3 @@
-# beland-builder-scripts
+# memetaverse-builder-scripts
 
 TODO
